@@ -13,8 +13,15 @@ const build = async (frameData) => {
     }
 
     const html = String.raw;
-    const frameHTML = html`
-        <fc-frame>
+  // Assuming lastFramerUsername is defined somewhere in your code
+ // Make sure this variable is properly defined
+
+// Correctly create the url with the variable included
+const url = `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=${encodeURIComponent('https://web3.bio/0xhashbrown.eth') + encodeURIComponent(lastFramerUsername)}`;
+
+// Now, embed the url variable correctly in the template literal for the image src
+const frameHTML = html`
+    <fc-frame>
 <div class="space-y-6">
     <div class="flex items-center space-x-4">
       <img src="https://unsplash.com/photos/1_CMoFsPfso/download?force=true&w=640" alt="Logo" class="h-16 w-16 rounded-full">
@@ -30,14 +37,13 @@ const build = async (frameData) => {
       <a href="#" class="block link px-6 py-3 rounded-lg text-lg font-semibold">Guild.xyz</a>
       <a href="#" class="block link px-6 py-3 rounded-lg text-lg font-semibold">Podbean</a>
     </div>
-  </div>
-        <img src="https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=https://web3.bio/0xhashbrown.eth + ${lastFramerUsername || ''}"
-            </div>
-        </fc-frame>
-    `;
+    <img src="${url}" alt="Dynamic Image">
+</div>
+</fc-frame>
+`;
 
-    return mainLayout(frameData, frameHTML);
-}
+return mainLayout(frameData, frameHTML);
+
 
 export const buttons = [
     { 
