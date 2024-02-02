@@ -50,3 +50,7 @@ export default {
         }
     ]
 };
+export default {
+    build,
+    buttons
+};
