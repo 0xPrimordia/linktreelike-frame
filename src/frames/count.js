@@ -42,7 +42,7 @@ const build = async (frameData) => {
 };
 export default {
     
-    image: `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&height=700&url=https://web3.bio/${username}`,
+    //image: `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&height=700&url=https://web3.bio/${username}`,
     buttons: [
         { 
             label: '⬅️ Back',
