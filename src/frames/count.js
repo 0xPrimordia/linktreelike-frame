@@ -13,8 +13,8 @@ const build = async (frameData) => {
     }
 
     const html = String.raw;
-    const encodedUrl = encodeURIComponent('https://web3.bio/0xhashbrown.eth' + (lastFramerUsername ? '/' + lastFramerUsername : ''));
-    const url = `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=${encodedUrl}`;
+   // const encodedUrl = encodeURIComponent('https://web3.bio/0xhashbrown.eth' + (lastFramerUsername ? '/' + lastFramerUsername : ''));
+    //const url = `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=${encodedUrl}`;
 
     const frameHTML = html`
         <fc-frame>
@@ -33,7 +33,7 @@ const build = async (frameData) => {
                     <a href="#" class="block link px-6 py-3 rounded-lg text-lg font-semibold">Guild.xyz</a>
                     <a href="#" class="block link px-6 py-3 rounded-lg text-lg font-semibold">Podbean</a>
                 </div>
-                <img src="${url}" alt="Dynamic Image">
+                <img src="" alt="Dynamic Image">
             </div>
         </fc-frame>
     `;
