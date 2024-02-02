@@ -44,10 +44,3 @@ const frameHTML = html`
 
 return mainLayout(frameData, frameHTML);
 
-
-
-
-export default {
-    build,
-    buttons
-};
