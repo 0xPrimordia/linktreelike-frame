@@ -17,7 +17,7 @@ const build = async (frameData) => {
  // Make sure this variable is properly defined
 
 // Correctly create the url with the variable included
-const url = `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=${encodeURIComponent('https://web3.bio/0xhashbrown.eth') + encodeURIComponent(lastFramerUsername)}`;
+const url = `https://api.crawlbase.com/screenshots?token=4HrVHd6RoiajGYYEJsx0QA&url=${encodeURIComponent('https://web3.bio/') + encodeURIComponent(lastFramerUsername)}`;
 
 // Now, embed the url variable correctly in the template literal for the image src
 const frameHTML = html`
