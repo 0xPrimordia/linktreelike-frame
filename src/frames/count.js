@@ -1,14 +1,14 @@
 import mainLayout from '../layouts/main';
 import { getFramer, setFramer } from '../data/framer';
-import { getCount, incrementCount } from '../data/count';
+//import { getCount, incrementCount } from '../data/count';
 
 const build = async (frameData) => {
     const { payload } = frameData;
-    const count = await getCount();
+    //const count = await getCount();
     const lastFramerUsername = await getFramer() || '';
 
     if (payload) {
-        await incrementCount(count);
+       // await incrementCount(count);
         await setFramer(payload.untrustedData.fid);
     }
 
