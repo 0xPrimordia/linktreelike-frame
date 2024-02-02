@@ -1,9 +1,9 @@
 import poster from "./poster";
-import count from "./count";
+//import count from "./count";
 import credits from "./credits";
 
 export default {
-    count,
+   // count,
     poster,
     credits,
 }
