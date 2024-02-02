@@ -15,8 +15,8 @@ const getFramer = async() => {
 
     const body = await streamToString(request.body);
     const data = JSON.parse(body);
-    const username = data.result.user.username;
-    return username;
+    //const username = data.result.user.username;
+    //return username;
 }
 
 const setFramer = async(fid) => {
