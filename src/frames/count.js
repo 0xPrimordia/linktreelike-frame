@@ -45,16 +45,7 @@ const frameHTML = html`
 return mainLayout(frameData, frameHTML);
 
 
-export const buttons = [
-    { 
-        label: '🫵 Frame me!',
-        goTo: 'count',
-    },
-    { 
-        label: '🎬 View credits',
-        goTo: 'credits',
-    }
-]
+
 
 export default {
     build,
